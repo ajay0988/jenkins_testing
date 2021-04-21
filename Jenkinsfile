@@ -12,7 +12,14 @@ pipeline {
           
           steps {
              
-                echo "my dev branch"
+                echo "my dev branch",
+              sh '''#!/bin/bash
+
+                    echo "Hello from bash"
+                    echo "Who I'm $SHELL"
+                    mvn -version
+                    java -version
+                '''
           }
         }
    }
