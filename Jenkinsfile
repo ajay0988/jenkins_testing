@@ -12,8 +12,8 @@ pipeline {
           
           steps {
              
-                echo "my dev branch",
-              sh '''#!/bin/bash
+                echo "my master branch",
+                sh '''#!/bin/bash
 
                     echo "Hello from bash"
                     echo "Who I'm $SHELL"
