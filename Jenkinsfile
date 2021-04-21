@@ -12,8 +12,10 @@ pipeline {
           
           steps {
              
-                echo "my master branch"
-                sh "mvn -version"
+                sh '''
+                    echo "MASTER branch"
+                    pwd
+                '''
           }
         }
    }
