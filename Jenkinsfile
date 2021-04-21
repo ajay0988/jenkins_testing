@@ -12,7 +12,7 @@ pipeline {
           
           steps {
              
-                echo "my dev branch",
+                echo "my dev branch"
                 sh '''#!/bin/bash
 
                     echo "Hello from bash"
