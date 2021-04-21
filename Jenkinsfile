@@ -12,8 +12,10 @@ pipeline {
           
           steps {
              
-                echo "my dev branch"
-                sh "mvn -version"
+                sh '''
+                    echo "DEV branch"
+                    ls -l
+                '''
           }
         }
    }
